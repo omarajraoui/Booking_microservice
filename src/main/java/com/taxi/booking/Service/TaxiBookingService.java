@@ -50,12 +50,7 @@ public class TaxiBookingService implements ITaxiBookingService {
     }
 
 
-    @Override
-    public TaxiBooking accept(TaxiBooking taxiBooking) {
-        taxiBooking.setTaxiBookingStatus(TaxiBookingStatus.Accepted);
-        return taxiBooking;
 
-    }
 
     @Override
     public List<TaxiBooking> getAllBookings() {
@@ -77,10 +72,6 @@ public class TaxiBookingService implements ITaxiBookingService {
     }
 
 
-    @Override
-    public TaxiBooking updateBookingStatus(String taxiBookingId, TaxiBookingStatus taxiBookingStatus) {
-        return null;
-    }
 
 //    @Override
 //    public TaxiBooking updateBookingStatus(String taxiBookingId, TaxiBookingStatus taxiBookingStatus) {

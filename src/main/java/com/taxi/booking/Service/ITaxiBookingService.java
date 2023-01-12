@@ -12,11 +12,8 @@ import java.util.List;
 public interface ITaxiBookingService {
     public TaxiBooking book(TaxiBookedEventDto taxiBookedEventDto);
     public TaxiBooking cancel(Long taxiBookingId);// TaxiBookingCanceledEventDTO canceledEventDTO);
-    public TaxiBooking accept(TaxiBooking taxiBooking);
 
     public List<TaxiBooking> getAllBookings();
 
-    public TaxiBooking updateBookingStatus(String taxiBookingId,
-                               TaxiBookingStatus taxiBookingStatus);
 
 }
